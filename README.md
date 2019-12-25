@@ -9,13 +9,10 @@ UI:
 前后端分离，基于vue技术栈。核心库当前版本为：
 
 ### 参与学习或开发
-- 下载源码
-  ```
-  git clone http://gitlab.weilaicheng.com/Front-end/vue-music-class.git
-  ```
+
 - 安装项目有关依赖
   ```
-  cd vue-music-class &&  npm install 
+  cd MusicClass &&  npm install 
   ```
 - 启动项目
   ```
