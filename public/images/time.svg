@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 74</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="课程详情-课程介绍" transform="translate(-31.000000, -669.000000)">
+            <g id="Group-12" transform="translate(30.000000, 608.000000)">
+                <g id="Group-7" transform="translate(0.000000, 60.000000)">
+                    <g id="Group-5">
+                        <g id="Group-74">
+                            <rect id="Rectangle" fill="#FFFFFF" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                            <g id="Group-4" transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+                                <path d="M11,0 C4.95,0 0,4.95 0,11 C0,17.05 4.95,22 11,22 C17.05,22 22,17.05 22,11 C22,4.95 17.05,0 11,0" id="Path" fill="#C7C7C7"></path>
+                                <path d="M17.0243902,13 L10.9756098,13 C10.3902439,13 10,12.6097561 10,12.0243902 L10,5.97560976 C10,5.39024391 10.3902439,5 10.9756098,5 C11.5609756,5 11.9512195,5.39024391 11.9512195,5.97560976 L11.9512195,11.0487805 L17.0243902,11.0487805 C17.6097561,11.0487805 18,11.4390244 18,12.0243902 C18,12.4146341 17.6097561,13 17.0243902,13" id="Path" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

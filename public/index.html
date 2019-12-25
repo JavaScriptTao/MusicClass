@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but js-h5-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <script src="http://prd-kpl.oss-cn-shanghai.aliyuncs.com/fe/vue/2.6.9/vue.min.js"></script>
+    <script src="http://prd-kpl.oss-cn-shanghai.aliyuncs.com/fe/vueRouter/3.0.2/vueRouter.min.js"></script>
+    <script src="http://prd-kpl.oss-cn-shanghai.aliyuncs.com/fe/vuex/3.1.0/vuex.min.js"></script>
+    <!-- built files will be auto injected -->
+   <script> 
+      if(window.location.pathname === '/reserve'){
+        let script1=document.createElement('script');
+        script1.type="text/javascript";
+        script1.charset="utf-8";
+        script1.src="//g.alicdn.com/sd/nvc/1.1.112/guide.js?t=2015052012";
+        let script=document.createElement('script');
+        script.type="text/javascript";
+        script.src="//g.alicdn.com/sd/nvc/1.1.112/guide.js";
+        document.body.appendChild(script);
+        document.body.appendChild(script1);
+        window.NVC_Opt = {
+        //无痕配置 && 滑动验证、刮刮卡、问答验证码通用配置
+        appkey:'FFFF0N000000000070EC',
+        scene:'nvc_login_h5',
+        isH5:true,
+        popUp:false,
+        renderTo:'#captcha',
+        nvcCallback:function(data){
+            // data为getNVCVal()的值，此函数为二次验证滑动或者刮刮卡通过后的回调函数
+            // data跟业务请求一起上传，由后端请求AnalyzeNvc接口，接口会返回100或者900
+        },
+        trans: {"key1": "code0","nvcCode":400},
+        language: "cn",
+        //滑动验证长度配置
+        customWidth: 300,
+        //刮刮卡配置项
+        width: 300,
+        height: 100,
+        elements: [
+            '//img.alicdn.com/tfs/TB17cwllsLJ8KJjy0FnXXcFDpXa-50-74.png',
+            '//img.alicdn.com/tfs/TB17cwllsLJ8KJjy0FnXXcFDpXa-50-74.png'
+        ], 
+        bg_back_prepared: '//img.alicdn.com/tps/TB1skE5SFXXXXb3XXXXXXXXXXXX-100-80.png',
+        bg_front: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABQCAMAAADY1yDdAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURefk5w+ruswAAAAfSURBVFjD7cExAQAAAMKg9U9tCU+gAAAAAAAAAIC3AR+QAAFPlUGoAAAAAElFTkSuQmCC',
+        obj_ok: '//img.alicdn.com/tfs/TB1rmyTltfJ8KJjy0FeXXXKEXXa-50-74.png',
+        bg_back_pass: '//img.alicdn.com/tfs/TB1KDxCSVXXXXasXFXXXXXXXXXX-100-80.png',
+        obj_error: '//img.alicdn.com/tfs/TB1q9yTltfJ8KJjy0FeXXXKEXXa-50-74.png',
+        bg_back_fail: '//img.alicdn.com/tfs/TB1w2oOSFXXXXb4XpXXXXXXXXXX-100-80.png',
+        upLang:{"cn":{
+            _ggk_guide: "请在屏幕上滑动，刮出两面盾牌",
+            _ggk_success: "恭喜您成功刮出盾牌<br/>继续下一步操作吧",
+            _ggk_loading: "加载中",
+            _ggk_fail: ['呀，盾牌不见了<br/>请', "javascript:NoCaptcha.reset()", '再来一次', '或', "http://survey.taobao.com/survey/QgzQDdDd?token=%TOKEN", '反馈问题'],
+            _ggk_action_timeout: ['我等得太久啦<br/>请', "javascript:NoCaptcha.reset()", '再来一次', '或', "http://survey.taobao.com/survey/QgzQDdDd?token=%TOKEN", '反馈问题'],
+            _ggk_net_err: ['网络实在不给力<br/>请', "javascript:NoCaptcha.reset()", '再来一次', '或', "http://survey.taobao.com/survey/QgzQDdDd?token=%TOKEN", '反馈问题'],
+            _ggk_too_fast: ['您刮得太快啦<br/>请', "javascript:NoCaptcha.reset()", '再来一次', '或', "http://survey.taobao.com/survey/QgzQDdDd?token=%TOKEN", '反馈问题']
+            }
+        }
+    }
+      }
+</script>
+  </body>
+</html>
